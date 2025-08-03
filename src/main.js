@@ -1,11 +1,28 @@
 import { Gadget, Fruit, Clothing, Food } from "./Build";
+import Lenis from "lenis";
+// import { Modal } from "./Modal";
+
 let products = [];
+
 const List = {
     Gadget: Gadget,
     Fruit: Fruit,
     Clothing: Clothing,
     Food: Food
 }
+
+function SmoothScroll() {
+    const lenis = new Lenis();
+
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+}
+
+SmoothScroll();
 
 async function GetProduct() {
 
@@ -28,8 +45,8 @@ async function init() {
 
     for (const data of products) {
         const name = data.naming.type
-        const newProducts = new List[name]( data );
-        
+        const newProducts = new List[name](data);
+
         const domCard = newProducts.build();
         cardContainer.appendChild(domCard);
     }

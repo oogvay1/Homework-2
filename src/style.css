@@ -12,6 +12,10 @@ body {
     color: #ffffff;
 }
 
+html {
+    overflow: hidden;
+}
+
 .cards-container {
     padding: 20px;
     display: flex;
@@ -71,7 +75,7 @@ body {
     background: #00000060;
 }
 
-.card-img-container:hover img{
+.card-img-container:hover img {
     scale: 1.1;
 }
 
@@ -84,7 +88,7 @@ body {
 }
 
 .main-product-info p {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
 }
 
@@ -142,11 +146,11 @@ body {
 
 .price-pay-type {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    background-color: #1B1E25;
+    background-color: #242731;
     padding: 15px;
-    gap: 50px;
+    gap: 10px;
     border-radius: 20px;
 }
 
@@ -170,7 +174,7 @@ body {
     width: 2px;
     height: 55px;
     border-radius: 10px;
-    background-color: rgb(63, 63, 63);
+    background-color: #3f3f3f;
 }
 
 .pay-container {
@@ -216,6 +220,52 @@ body {
     align-items: center;
     gap: 10px;
     transform: translateY(-15px);
+}
+
+.orange {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #b74900;
+    position: relative;
+    z-index: 999;
+}
+
+.orange::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    position: absolute;
+    background-color: #ff480070;
+    animation: dot 1.5s infinite forwards;
+}
+
+.red {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #ff0000;
+    position: relative;
+    z-index: 999;
+}
+
+.red::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    position: absolute;
+    background-color: #ff00008d;
+    animation: dot 1.5s infinite forwards;
 }
 
 .dot {
@@ -277,4 +327,48 @@ body {
         opacity: 0;
         display: block;
     }
+}
+
+.modal {
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background: linear-gradient(45deg, #3b3b3b5a, #30363d53);
+}
+
+.modal-inner {
+    width: 840px;
+    height: 640px;
+    border-radius: 20px;
+    background-color: #1b1c24;
+    clip-path: path("M 0,10 A 10,10 0,0,1 10,00 L 780,0 A 10,10 0,0,1 790,10 L 790,30 A 10,10 0,0,0 800,40 L 830,40 A 10,10 0,0,1 840,50 L 840,630 A 10,10 0,0,1 830,640 L 10,640 A 10,10 0,0,1 0,630 L 0,10 Z");
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.quit-btn {
+    width: 45px;
+    height: 36px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    transform: translate(-46px);
+    background-color: red;
+    transition: all .1s ease-in-out;
+}
+
+.quit-btn:active {
+    scale: .98;
 }

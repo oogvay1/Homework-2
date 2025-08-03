@@ -7,6 +7,7 @@ export class Product {
     build() {
         const card = document.createElement('div');
         card.classList = 'card';
+        const available = this.product.available.availableNumber;
 
         card.innerHTML = `
                 <div class="card-main-part">
@@ -20,7 +21,7 @@ export class Product {
                 </div>
 
                 <div class="main-product-info">
-                    <p>${this.product.naming.name}</p>
+                    <p class="product-name">${this.product.naming.name}</p>
 
                     <div class="product-prices">
                         <div class="market-name">
@@ -55,8 +56,8 @@ export class Product {
                     <div class="discount">
                         <p>Available</p>
                         <div class="available-icon">
-                            <div class="dot"></div>
-                            <p>${this.product.available.availableNumber} ${this.product.naming.type == 'Fruit' ? '/ kg' : ''} left</p>
+                            <div class="${available > 0 && available < 5 ? 'red' : available < 20 && available > 10 ? 'orange' : 'dot'}"></div>
+                            <p>${this.product.available.availableNumber} ${this.product.naming.type == 'Fruit' ? '/ kg' : 'left'}</p>
                         </div>
                     </div>
                 </div>
