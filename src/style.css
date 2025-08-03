@@ -13,16 +13,17 @@ body {
 }
 
 .cards-container {
-    width: 100vw;
-    height: 100vh;
+    padding: 20px;
     display: flex;
     justify-content: center;
+    gap: 40px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .card {
     width: 400px;
-    height: 500px;
+    height: 657px;
     padding: 14px;
     border-radius: 32px;
     background-color: #131419;
@@ -38,6 +39,7 @@ body {
     align-items: center;
     flex-direction: column;
     margin-inline: auto;
+    cursor: pointer;
     justify-content: center;
     transform: translate(-1px, -35px);
     clip-path: path("M 130,0 L 370,0 A 10,10 0,0,0 380,10 L 380,290 A 10,10 0,0,1 370,300 L 10,300 A 10,10 0,0,1 0,290 L 0,50 A 15,15 0,0,1 10,40 L 120,40 A 10,10 0,0,0 130,30 L 130,10 A 10,10 0,0,1 140,0 Z");
@@ -52,8 +54,25 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 18px;
+    cursor: pointer;
     background-color: #34353a;
     clip-path: path("M 0,20 A 20,20 0,0,1 20,0 L 117,0 A 10,10 0,0,1 127,10 L 127,25 A 10,10 0,0,1 117,35 L 10,35 A 10,10 0,0,1 0,25 Z");
+}
+
+.gradient {
+    width: 370px;
+    height: 300px;
+    background-color: #00000000;
+    position: absolute;
+    transition: all .2s ease-in-out;
+}
+
+.card-img-container:hover .gradient {
+    background: #00000060;
+}
+
+.card-img-container:hover img{
+    scale: 1.1;
 }
 
 .main-product-info {
@@ -71,6 +90,7 @@ body {
 
 .card-img-container img {
     width: 250px;
+    transition: all .2s ease-in-out;
 }
 
 .product-prices {
@@ -94,6 +114,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 }
 
 .market-name p {
@@ -121,13 +142,137 @@ body {
 
 .price-pay-type {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    background-color: red;
+    background-color: #1B1E25;
+    padding: 15px;
+    gap: 50px;
+    border-radius: 20px;
 }
 
 .credit img {
     width: 50px;
 }
 
-/* #1B1E25 */
+.coins img {
+    width: 25px;
+    margin-bottom: 10px;
+    transform: translateY(4px);
+}
+
+.pay-icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: last baseline;
+}
+
+.line {
+    width: 2px;
+    height: 55px;
+    border-radius: 10px;
+    background-color: rgb(63, 63, 63);
+}
+
+.pay-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.pay-types p:nth-child(1) {
+    font-size: 22px;
+    color: #B6B9C0;
+    font-weight: 600;
+}
+
+.discount p:nth-child(1) {
+    font-size: 22px;
+    color: #B6B9C0;
+    font-weight: 600;
+}
+
+.pay-types {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.discount {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+
+.available-icon p {
+    font-size: 25px;
+}
+
+.available-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-15px);
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #00b700;
+    position: relative;
+    z-index: 999;
+}
+
+.dot::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    position: absolute;
+    background-color: #00ff0070;
+    animation: dot 1.5s infinite forwards;
+}
+
+.order-btn {
+    width: 370px;
+    height: 55px;
+    border: none;
+    margin-top: 17px;
+    font-size: 30px;
+    color: #000;
+    font-weight: 700;
+    border-radius: 18px;
+    cursor: pointer;
+    background-color: #e9e9e9;
+    transition: all .14s ease-in-out;
+}
+
+.order-btn:hover {
+    scale: 1.02;
+}
+
+.order-btn:active {
+    scale: .98;
+}
+
+@keyframes dot {
+    0% {
+        width: 14px;
+        height: 14px;
+        opacity: 1;
+        display: block;
+    }
+
+    100% {
+        width: 30px;
+        height: 30px;
+        opacity: 0;
+        display: block;
+    }
+}

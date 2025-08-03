@@ -1,0 +1,374 @@
+[
+    {
+        "naming": {
+            "name": "iPhone 15 Pro",
+            "type": "Gadget"
+        },
+        "images": {
+            "src": "../public/iphone.png"
+        },
+        "market": {
+            "marketName": "Uzum Market",
+            "marketLogo": "../public/Uzum.png.png"
+        },
+        "pricing": {
+            "price": "$1,400.00"
+        },
+        "payment": {
+            "paymentType": {
+                "creditCard": "-20%",
+                "coins": "-10%"
+            }
+        },
+        "available": {
+            "availableNumber": 25
+        },
+        "aboutProduct": {
+            "processor": "A17 Bionic",
+            "camera": "48MP + 12MP + 12MP",
+            "screen": "6.1\" OLED, 120Hz",
+            "cover": "Titanium",
+            "battery": "3200mAh",
+            "storage": "256GB"
+        }
+    },
+    {
+        "naming": {
+            "name": "Samsung Galaxy S24",
+            "type": "Gadget"
+        },
+        "images": {
+            "src": "../public/galaxy.png"
+        },
+        "market": {
+            "marketName": "Tech Market",
+            "marketLogo": "../public/tech-logo.png"
+        },
+        "pricing": {
+            "price": "$999.00"
+        },
+        "payment": {
+            "paymentType": {
+                "creditCard": "-15%",
+                "coins": "-5%"
+            }
+        },
+        "available": {
+            "availableNumber": 40
+        },
+        "aboutProduct": {
+            "processor": "Exynos 2400",
+            "camera": "50MP + 10MP + 12MP",
+            "screen": "6.6\" AMOLED, 120Hz",
+            "battery": "4500mAh",
+            "storage": "128GB",
+            "os": "Android 14"
+        }
+    },
+    {
+        "naming": {
+            "name": "Banana",
+            "type": "Fruit"
+        },
+        "images": {
+            "src": "../public/banana.png"
+        },
+        "market": {
+            "marketName": "Fresh Fruit Market",
+            "marketLogo": "../public/fruitlogo.png"
+        },
+        "pricing": {
+            "price": "$1.20 / kg"
+        },
+        "payment": {
+            "paymentType": {
+                "cash": "Full price",
+                "coins": "-5%"
+            }
+        },
+        "available": {
+            "availableNumber": 300
+        },
+        "aboutProduct": {
+            "origin": "Ecuador",
+            "ripeness": "Ripe",
+            "packaging": "Loose",
+            "shelfLife": "7 days",
+            "vitamins": [
+                "B6",
+                "C"
+            ],
+            "sweetness": "High"
+        }
+    },
+    {
+        "naming": {
+            "name": "Orange",
+            "type": "Fruit"
+        },
+        "images": {
+            "src": "../public/orange.png"
+        },
+        "market": {
+            "marketName": "Citrus Market",
+            "marketLogo": "../public/citrus-logo.png"
+        },
+        "pricing": {
+            "price": "$1.80 / kg"
+        },
+        "payment": {
+            "paymentType": {
+                "cash": "Full price",
+                "coins": "-8%"
+            }
+        },
+        "available": {
+            "availableNumber": 150
+        },
+        "aboutProduct": {
+            "origin": "Spain",
+            "ripeness": "Fresh",
+            "packaging": "Bag",
+            "shelfLife": "10 days",
+            "vitamins": [
+                "C",
+                "A"
+            ],
+            "taste": "Sweet & sour"
+        }
+    },
+    {
+        "naming": {
+            "name": "Chicken Burger",
+            "type": "Food"
+        },
+        "images": {
+            "src": "../public/burger.png"
+        },
+        "market": {
+            "marketName": "Burger House",
+            "marketLogo": "../public/burger-logo.png"
+        },
+        "pricing": {
+            "price": "$4.99"
+        },
+        "payment": {
+            "paymentType": {
+                "creditCard": "-10%",
+                "cash": "Full price"
+            }
+        },
+        "available": {
+            "availableNumber": 50
+        },
+        "aboutProduct": {
+            "ingredients": [
+                "Chicken",
+                "Lettuce",
+                "Tomato",
+                "Mayo"
+            ],
+            "calories": "550 kcal",
+            "weight": "250g",
+            "packaging": "Box",
+            "spicy": "Mild",
+            "servedWith": "Fries"
+        }
+    },
+    {
+        "naming": {
+            "name": "Beef Pizza",
+            "type": "Food"
+        },
+        "images": {
+            "src": "../public/pizza.png"
+        },
+        "market": {
+            "marketName": "Pizza Town",
+            "marketLogo": "../public/pizza-logo.png"
+        },
+        "pricing": {
+            "price": "$8.50"
+        },
+        "payment": {
+            "paymentType": {
+                "creditCard": "-10%",
+                "cash": "-5%"
+            }
+        },
+        "available": {
+            "availableNumber": 35
+        },
+        "aboutProduct": {
+            "ingredients": [
+                "Beef",
+                "Cheese",
+                "Tomato Sauce",
+                "Olives"
+            ],
+            "calories": "900 kcal",
+            "size": "Medium (30cm)",
+            "crust": "Stuffed",
+            "packaging": "Box",
+            "cookTime": "12 mins"
+        }
+    },
+    {
+        "naming": {
+            "name": "Men's Cotton T-shirt",
+            "type": "Clothing"
+        },
+        "images": {
+            "src": "../public/tshirt.png"
+        },
+        "market": {
+            "marketName": "Style Store",
+            "marketLogo": "../public/style-logo.png"
+        },
+        "pricing": {
+            "price": "$12.00"
+        },
+        "payment": {
+            "paymentType": {
+                "creditCard": "-5%",
+                "coins": "-2%"
+            }
+        },
+        "available": {
+            "availableNumber": 100
+        },
+        "aboutProduct": {
+            "material": "100% Cotton",
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "colors": [
+                "Black",
+                "White",
+                "Blue"
+            ],
+            "fit": "Regular",
+            "gender": "Male",
+            "care": "Machine wash"
+        }
+    },
+    {
+        "naming": {
+            "name": "Women's Summer Dress",
+            "type": "Clothing"
+        },
+        "images": {
+            "src": "../public/dress.png"
+        },
+        "market": {
+            "marketName": "Elegant Wear",
+            "marketLogo": "../public/elegant-logo.png"
+        },
+        "pricing": {
+            "price": "$35.00"
+        },
+        "payment": {
+            "paymentType": {
+                "creditCard": "-12%",
+                "coins": "-6%"
+            }
+        },
+        "available": {
+            "availableNumber": 80
+        },
+        "aboutProduct": {
+            "material": "Linen Blend",
+            "sizes": [
+                "S",
+                "M",
+                "L"
+            ],
+            "colors": [
+                "Pink",
+                "Yellow",
+                "Green"
+            ],
+            "style": "Casual",
+            "length": "Knee-length",
+            "gender": "Female"
+        }
+    },
+    {
+        "naming": {
+            "name": "Formal Shirt",
+            "type": "Clothing"
+        },
+        "images": {
+            "src": "../public/shirt.png"
+        },
+        "market": {
+            "marketName": "Business Attire",
+            "marketLogo": "../public/business-logo.png"
+        },
+        "pricing": {
+            "price": "$25.00"
+        },
+        "payment": {
+            "paymentType": {
+                "creditCard": "-15%",
+                "coins": "-5%"
+            }
+        },
+        "available": {
+            "availableNumber": 60
+        },
+        "aboutProduct": {
+            "material": "Cotton blend",
+            "sizes": [
+                "M",
+                "L",
+                "XL",
+                "XXL"
+            ],
+            "colors": [
+                "White",
+                "Grey",
+                "Light Blue"
+            ],
+            "fit": "Slim Fit",
+            "gender": "Male",
+            "sleeve": "Long"
+        }
+    },
+    {
+        "naming": {
+            "name": "Wireless Headphones",
+            "type": "Gadget"
+        },
+        "images": {
+            "src": "../public/headphones.png"
+        },
+        "market": {
+            "marketName": "Gadget Zone",
+            "marketLogo": "../public/gadgetzone-logo.png"
+        },
+        "pricing": {
+            "price": "$89.99"
+        },
+        "payment": {
+            "paymentType": {
+                "creditCard": "-10%",
+                "coins": "-4%"
+            }
+        },
+        "available": {
+            "availableNumber": 120
+        },
+        "aboutProduct": {
+            "batteryLife": "40 hours",
+            "connectivity": "Bluetooth 5.3",
+            "noiseCancellation": "Active",
+            "weight": "250g",
+            "charging": "USB-C Fast Charge",
+            "color": "Black"
+        }
+    }
+]
