@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #ffffff;
+}
+
+.cards-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 400px;
+    height: 500px;
+    padding: 14px;
+    border-radius: 32px;
+    background-color: #131419;
+}
+
+.card-img-container {
+    display: flex;
+    width: 370px;
+    height: 300px;
+    border-radius: 25px;
+    margin-inline: auto;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+    margin-inline: auto;
+    justify-content: center;
+    transform: translate(-1px, -35px);
+    clip-path: path("M 130,0 L 370,0 A 10,10 0,0,0 380,10 L 380,290 A 10,10 0,0,1 370,300 L 10,300 A 10,10 0,0,1 0,290 L 0,50 A 15,15 0,0,1 10,40 L 120,40 A 10,10 0,0,0 130,30 L 130,10 A 10,10 0,0,1 140,0 Z");
+    background: url('../public/background-for-product2.jpg') 800px 540px /400px;
+}
+
+.product-type {
+    width: 126px;
+    height: 35px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    background-color: #34353a;
+    clip-path: path("M 0,20 A 20,20 0,0,1 20,0 L 117,0 A 10,10 0,0,1 127,10 L 127,25 A 10,10 0,0,1 117,35 L 10,35 A 10,10 0,0,1 0,25 Z");
+}
+
+.main-product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    margin-top: -35px;
+}
+
+.main-product-info p {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.card-img-container img {
+    width: 250px;
+}
+
+.product-prices {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-prices p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.price {
+    font-size: 18px;
+    color: #ccc;
+}
+
+.market-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.market-name p {
+    color: #ccc;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.market-name img {
+    width: 35px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.price-main {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.price-main p:nth-child(2) {
+    font-size: 18px;
+}
+
+.price-pay-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+}
+
+.credit img {
+    width: 50px;
+}
+
+/* #1B1E25 */
