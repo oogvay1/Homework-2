@@ -207,12 +207,14 @@ body {
 
 .available-icon p {
     font-size: 25px;
+    padding: 0 14px;
 }
 
 .available-icon {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
     transform: translateY(-15px);
 }
 

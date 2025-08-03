@@ -8,8 +8,8 @@
             "src": "../public/iphone.png"
         },
         "market": {
-            "marketName": "Uzum Market",
-            "marketLogo": "../public/Uzum.png.png"
+            "marketName": "Apple Store",
+            "marketLogo": "../public/applestore.png"
         },
         "pricing": {
             "price": "$1,400.00"
@@ -41,8 +41,8 @@
             "src": "../public/galaxy.png"
         },
         "market": {
-            "marketName": "Tech Market",
-            "marketLogo": "../public/tech-logo.png"
+            "marketName": "Samsung Shop",
+            "marketLogo": "../public/samsung.png"
         },
         "pricing": {
             "price": "$999.00"
@@ -74,7 +74,7 @@
             "src": "../public/banana.png"
         },
         "market": {
-            "marketName": "Fresh Fruit Market",
+            "marketName": "Carrefour",
             "marketLogo": "../public/fruitlogo.png"
         },
         "pricing": {
@@ -110,7 +110,7 @@
             "src": "../public/orange.png"
         },
         "market": {
-            "marketName": "Citrus Market",
+            "marketName": "Walmart",
             "marketLogo": "../public/citrus-logo.png"
         },
         "pricing": {
@@ -146,7 +146,7 @@
             "src": "../public/burger.png"
         },
         "market": {
-            "marketName": "Burger House",
+            "marketName": "McDonald's",
             "marketLogo": "../public/burger-logo.png"
         },
         "pricing": {
@@ -184,7 +184,7 @@
             "src": "../public/pizza.png"
         },
         "market": {
-            "marketName": "Pizza Town",
+            "marketName": "Pizza Hut",
             "marketLogo": "../public/pizza-logo.png"
         },
         "pricing": {
@@ -222,7 +222,7 @@
             "src": "../public/tshirt.png"
         },
         "market": {
-            "marketName": "Style Store",
+            "marketName": "H&M",
             "marketLogo": "../public/style-logo.png"
         },
         "pricing": {
@@ -257,85 +257,45 @@
     },
     {
         "naming": {
-            "name": "Women's Summer Dress",
+            "name": "Men's Casual Linen Shirt",
             "type": "Clothing"
         },
         "images": {
-            "src": "../public/dress.png"
+            "src": "../public/linen-shirt.png"
         },
         "market": {
-            "marketName": "Elegant Wear",
-            "marketLogo": "../public/elegant-logo.png"
+            "marketName": "Uniqlo",
+            "marketLogo": "../public/uniqlo-logo.png"
         },
         "pricing": {
-            "price": "$35.00"
+            "price": "$39.90"
         },
         "payment": {
             "paymentType": {
-                "creditCard": "-12%",
-                "coins": "-6%"
+                "creditCard": "-8%",
+                "coins": "-4%"
             }
         },
         "available": {
-            "availableNumber": 80
+            "availableNumber": 120
         },
         "aboutProduct": {
-            "material": "Linen Blend",
+            "material": "100% Linen",
             "sizes": [
                 "S",
-                "M",
-                "L"
-            ],
-            "colors": [
-                "Pink",
-                "Yellow",
-                "Green"
-            ],
-            "style": "Casual",
-            "length": "Knee-length",
-            "gender": "Female"
-        }
-    },
-    {
-        "naming": {
-            "name": "Formal Shirt",
-            "type": "Clothing"
-        },
-        "images": {
-            "src": "../public/shirt.png"
-        },
-        "market": {
-            "marketName": "Business Attire",
-            "marketLogo": "../public/business-logo.png"
-        },
-        "pricing": {
-            "price": "$25.00"
-        },
-        "payment": {
-            "paymentType": {
-                "creditCard": "-15%",
-                "coins": "-5%"
-            }
-        },
-        "available": {
-            "availableNumber": 60
-        },
-        "aboutProduct": {
-            "material": "Cotton blend",
-            "sizes": [
                 "M",
                 "L",
                 "XL",
                 "XXL"
             ],
             "colors": [
-                "White",
-                "Grey",
-                "Light Blue"
+                "Beige",
+                "Navy",
+                "Olive"
             ],
-            "fit": "Slim Fit",
-            "gender": "Male",
-            "sleeve": "Long"
+            "style": "Relaxed Fit",
+            "sleeve": "Long Sleeve",
+            "gender": "Male"
         }
     },
     {
@@ -347,7 +307,7 @@
             "src": "../public/headphones.png"
         },
         "market": {
-            "marketName": "Gadget Zone",
+            "marketName": "Best Buy",
             "marketLogo": "../public/gadgetzone-logo.png"
         },
         "pricing": {
