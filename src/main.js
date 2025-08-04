@@ -47,10 +47,11 @@ async function init() {
     const cardContainer = document.getElementById('cards-container');
 
     for (const data of products) {
-        const name = data.naming.type
+        const name = data.naming.type;
         const newProducts = new List[name](data);
 
         const domCard = newProducts.build();
+
         cardContainer.appendChild(domCard);
     }
 }

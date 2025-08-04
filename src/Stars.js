@@ -1,44 +1,27 @@
-const starsContainer = document.getElementById('starsContainer');
+export default function renderStars(starsContainer) {
+    starsContainer.innerHTML = '';
 
-for (let i = 0; i < 5; i++) {
-    const span = document.createElement('span');
-    span.className = 'star';
-    span.innerHTML = '<i class="ri-star-line"></i>';
-    starsContainer.appendChild(span);
-}
-
-const starElements = document.querySelectorAll('.star');
-
-window.addEventListener('DOMContentLoaded', () => {
     const savedIndex = parseInt(localStorage.getItem('index')) || 0;
+    const stars = [];
 
-    starElements.forEach((s, j) => {
-        const icon = s.querySelector('i');
+    for (let i = 0; i < 5; i++) {
+        const span = document.createElement('span');
+        span.className = 'star';
+        span.innerHTML = '<i class="ri-star-line"></i>';
 
-        if (j <= savedIndex) {
-            icon.className = 'ri-star-fill';
-        } else {
-            icon.className = 'ri-star-line';
+        if (i <= savedIndex) {
+            span.querySelector('i').className = 'ri-star-fill';
         }
-    });
-});
 
-
-starElements.forEach((star, i) => {
-
-    star.addEventListener('click', () => {
-        localStorage.setItem('index', i);
-
-        starElements.forEach((s, j) => {
-            const icon = s.querySelector('i');
-
-            if (j <= i) {
-                icon.className = 'ri-star-fill';
-            } else {
-                icon.className = 'ri-star-line';
-            }
+        span.addEventListener('click', () => {
+            localStorage.setItem('index', i);
+            stars.forEach((s, j) => {
+                const icon = s.querySelector('i');
+                icon.className = j <= i ? 'ri-star-fill' : 'ri-star-line';
+            });
         });
-    });
-});
 
-export default starElements
+        stars.push(span);
+        starsContainer.appendChild(span);
+    }
+}

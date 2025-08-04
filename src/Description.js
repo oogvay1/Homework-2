@@ -12,9 +12,9 @@ export class Buttons {
 
 export class Description extends Buttons {
     info() {
-        infoContainer.innerHTML = '';
+        // infoContainer.innerHTML = '';
         const text = document.createElement('p');
-        text.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eligendi rerum cupiditate aliquid error deserunt ipsam molestias mollitia natus repellendus.';
+        // text.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eligendi rerum cupiditate aliquid error deserunt ipsam molestias mollitia natus repellendus.';
         infoContainer.appendChild(text);
     }
 }

@@ -1,3 +1,5 @@
+import { Gadget2 } from "./Modal";
+
 export class Product {
 
     constructor(data) {
@@ -15,7 +17,7 @@ export class Product {
                         <p>${this.product.naming.type}</p>
                     </div>
                     <div class="card-img-container">
-                        <img src=${this.product.images.src} alt="">
+                        <img class="card-img" src=${this.product.images.src} alt="">
                         <div class="gradient"></div>
                     </div>
                 </div>
@@ -64,6 +66,11 @@ export class Product {
 
                 <button class="order-btn">Order now</button>
             `
+        const img = document.querySelector('.card-img');
+
+        card.addEventListener('click', () => {
+            const modal = new Gadget2(this.product).modal();
+        });
 
         return card
     }

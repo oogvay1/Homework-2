@@ -477,4 +477,41 @@ html {
 
 #moreInfo {
     padding: 18px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.datail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-btn {
+    width: 381px;
+    height: 50px;
+    border-radius: 18px;
+    border-radius: 14px;
+    margin-inline: auto;
+    border: none;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+
+.modal-btn:hover {
+    scale: 1.02;
+}
+
+.modal-btn:active {
+    scale: .98;
+}
+
+.modal-full-info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 80px;
 }
