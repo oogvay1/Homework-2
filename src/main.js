@@ -1,5 +1,8 @@
 import { Gadget, Fruit, Clothing, Food } from "./Build";
 import Lenis from "lenis";
+import { Description } from "./Description";
+import starElements from "./Stars";
+
 // import { Modal } from "./Modal";
 
 let products = [];
