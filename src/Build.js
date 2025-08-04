@@ -44,12 +44,12 @@ export class Product {
 
                         <div class="pay-icon">
                             <div class="credit pay-container">
-                                <img src="./public/image-removebg-preview.png" alt="">
+                                <img src="./public/image-removebg-preview.webp" alt="">
                                 <p>${this.product.payment.paymentType.creditCard ? this.product.payment.paymentType.creditCard : this.product.payment.paymentType.cash}</p>
                             </div>
                             <div class="line"></div>
                             <div class="coins pay-container">
-                                <img src="./public/image-removebg-preview (1).png" alt="">
+                                <img src="./public/image-removebg-preview (1).webp" alt="">
                                 <p>${this.product.payment.paymentType.coins ? this.product.payment.paymentType.coins : this.product.payment.paymentType.cash}</p>
                             </div>
                         </div>
