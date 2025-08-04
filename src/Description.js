@@ -1,4 +1,5 @@
 const infoContainer = document.getElementById('moreInfo');
+import { FruitM, GadgetM, Modal } from "./Modal";
 
 export class Buttons {
     constructor(name) {
@@ -6,7 +7,7 @@ export class Buttons {
     }
 
     info() {
-        // Base method
+
     }
 }
 
@@ -32,22 +33,24 @@ const List = {
 
 const buttons = document.querySelectorAll('.info-buttons');
 
-buttons.forEach(el => {
-    el.addEventListener('click', () => {
-        buttons.forEach(btn => btn.classList.remove('active'));
-        el.classList.add('active');
+if (buttons) {
+    buttons.forEach(el => {
+        el.addEventListener('click', () => {
+            buttons.forEach(btn => btn.classList.remove('active'));
+            el.classList.add('active');
 
-        const name = el.textContent.trim();
-        const ClassRef = List[name];
+            const name = el.textContent.trim();
+            const ClassRef = List[name];
 
-        if (ClassRef) {
-            const instance = new ClassRef(name);
-            instance.info();
-        } else {
-            console.warn(`Class not found for: ${name}`);
-        }
+            if (ClassRef) {
+                const instance = new ClassRef(name);
+                instance.info();
+            } else {
+                console.warn(`Class not found for: ${name}`);
+            }
+        });
     });
-});
+}
 
 window.addEventListener('DOMContentLoaded', () => {
     const defaultName = 'Description';

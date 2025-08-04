@@ -1,4 +1,4 @@
-import { Gadget2 } from "./Modal";
+import { GadgetM, FruitM } from "./Modal";
 
 export class Product {
 
@@ -69,7 +69,7 @@ export class Product {
         const img = document.querySelector('.card-img');
 
         card.addEventListener('click', () => {
-            const modal = new Gadget2(this.product).modal();
+            const modal = new FruitM(this.product).modal();
         });
 
         return card

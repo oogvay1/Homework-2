@@ -16,7 +16,7 @@ export class Modal {
     }
 }
 
-export class Gadget2 extends Modal {
+export class GadgetM extends Modal {
 
     modal() {
         this.Modal.innerHTML = ``;
@@ -118,7 +118,7 @@ export class Gadget2 extends Modal {
     }
 }
 
-export class Fruit extends Modal {
+export class FruitM extends Modal {
 
     modal() {
         this.Modal.innerHTML = ``;
@@ -165,28 +165,28 @@ export class Fruit extends Modal {
 
                         <div id="moreInfo">
                             <div class="datail">
-                                <li>Rrocessor</li>
-                                <li>${this.product.aboutProduct.processor}</li>
+                                <li>Origin</li>
+                                <li>${this.product.aboutProduct.origin}</li>
                             </div>
                             <div class="datail">
-                                <li>Camera</li>
-                                <li>${this.product.aboutProduct.camera}</li>
+                                <li>Ripeness</li>
+                                <li>${this.product.aboutProduct.ripeness}</li>
                             </div>
                             <div class="datail">
-                                <li>Screen</li>
-                                <li>${this.product.aboutProduct.screen}</li>
+                                <li>Packaging</li>
+                                <li>${this.product.aboutProduct.packaging}</li>
                             </div>
                             <div class="datail">
-                                <li>Cover</li>
-                                <li>${this.product.aboutProduct.cover ? this.product.aboutProduct.cover : this.product.aboutProduct.os}</li>
+                                <li>ShelfLife</li>
+                                <li>${this.product.aboutProduct.shelfLife}</li>
                             </div>
                             <div class="datail">
-                                <li>Battery</li>
-                                <li>${this.product.aboutProduct.battery}</li>
+                                <li>Vitamins</li>
+                                <li id="vitamins"></li>
                             </div>
                             <div class="datail">
-                                <li>Storage</li>
-                                <li>${this.product.aboutProduct.storage}</li>
+                                <li>Sweetness</li>
+                                <li>${this.product.aboutProduct.sweetness}</li>
                             </div>
                         </div>
                     </div>
@@ -213,6 +213,16 @@ export class Fruit extends Modal {
             quitBtn.addEventListener('click', () => {
                 this.Modal.remove();
             });
+        }
+
+        const vitamins = document.getElementById('vitamins');
+
+        for (const vitamin of this.product.aboutProduct.vitamins) {
+            const vitaminContainer = document.createElement('li');
+console.log(vitamin)
+            vitaminContainer.textContent = vitamin;
+
+            vitamins.appendChild(vitaminContainer);
         }
     }
 
