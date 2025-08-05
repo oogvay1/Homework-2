@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    user-select: none;
     text-decoration: none;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif
@@ -49,7 +50,7 @@ html {
     justify-content: center;
     transform: translate(-1px, -35px);
     clip-path: path("M 130,0 L 370,0 A 10,10 0,0,0 380,10 L 380,290 A 10,10 0,0,1 370,300 L 10,300 A 10,10 0,0,1 0,290 L 0,50 A 15,15 0,0,1 10,40 L 120,40 A 10,10 0,0,0 130,30 L 130,10 A 10,10 0,0,1 140,0 Z");
-    background: url('../public/background-for-product2.jpg') 800px 540px /400px;
+    background: url('../public/background-for-product2.webp') 800px 540px /400px;
 }
 
 .product-type {
@@ -228,7 +229,7 @@ html {
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    background-color: #b74900;
+    background-color: #b7b400;
     position: relative;
     z-index: 999;
 }
@@ -243,7 +244,7 @@ html {
     transform: translate(-50%, -50%);
     border-radius: 50%;
     position: absolute;
-    background-color: #ff480070;
+    background-color: #ffdd0070;
     animation: dot 1.5s infinite forwards;
 }
 
@@ -361,7 +362,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('../public/background-for-product2.jpg') 0px 0px /450px;
+    background: url('../public/background-for-product2.webp') 0px 0px /450px;
 }
 
 .modal-image img {
@@ -457,6 +458,7 @@ html {
 
 .modal-buttons {
     display: flex;
+    margin-top: 20px;
     align-items: center;
     justify-content: center;
     border-bottom: 2px solid #dadada;
@@ -476,7 +478,7 @@ html {
 }
 
 #moreInfo {
-    padding: 18px 0;
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
     gap: 10px;

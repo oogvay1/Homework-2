@@ -5,11 +5,11 @@
             "type": "Gadget"
         },
         "images": {
-            "src": "../public/iphone.png"
+            "src": "../public/iphone.webp"
         },
         "market": {
             "marketName": "Apple Store",
-            "marketLogo": "../public/applestore.png"
+            "marketLogo": "../public/applestore.webp"
         },
         "pricing": {
             "price": "$1,400.00"
@@ -38,11 +38,11 @@
             "type": "Gadget"
         },
         "images": {
-            "src": "../public/galaxy.png"
+            "src": "../public/galaxy.webp"
         },
         "market": {
             "marketName": "Samsung Shop",
-            "marketLogo": "../public/samsung.png"
+            "marketLogo": "../public/samsung.webp"
         },
         "pricing": {
             "price": "$999.00"
@@ -71,11 +71,11 @@
             "type": "Fruit"
         },
         "images": {
-            "src": "../public/banana.png"
+            "src": "../public/banana.webp"
         },
         "market": {
             "marketName": "Carrefour",
-            "marketLogo": "../public/fruitlogo.png"
+            "marketLogo": "../public/fruitlogo.webp"
         },
         "pricing": {
             "price": "$1.20 / kg"
@@ -107,11 +107,11 @@
             "type": "Fruit"
         },
         "images": {
-            "src": "../public/orange.png"
+            "src": "../public/orange.webp"
         },
         "market": {
             "marketName": "Walmart",
-            "marketLogo": "../public/citrus-logo.png"
+            "marketLogo": "../public/citrus-logo.webp"
         },
         "pricing": {
             "price": "$1.80 / kg"
@@ -143,11 +143,11 @@
             "type": "Food"
         },
         "images": {
-            "src": "../public/burger.png"
+            "src": "../public/burger.webp"
         },
         "market": {
             "marketName": "McDonald's",
-            "marketLogo": "../public/burger-logo.png"
+            "marketLogo": "../public/burger-logo.webp"
         },
         "pricing": {
             "price": "$4.99"
@@ -181,11 +181,11 @@
             "type": "Food"
         },
         "images": {
-            "src": "../public/pizza.png"
+            "src": "../public/pizza.webp"
         },
         "market": {
             "marketName": "Pizza Hut",
-            "marketLogo": "../public/pizza-logo.png"
+            "marketLogo": "../public/pizza-logo.webp"
         },
         "pricing": {
             "price": "$8.50"
@@ -219,11 +219,11 @@
             "type": "Clothing"
         },
         "images": {
-            "src": "../public/tshirt.png"
+            "src": "../public/tshirt.webp"
         },
         "market": {
             "marketName": "H&M",
-            "marketLogo": "../public/style-logo.png"
+            "marketLogo": "../public/style-logo.webp"
         },
         "pricing": {
             "price": "$12.00"
@@ -261,11 +261,11 @@
             "type": "Clothing"
         },
         "images": {
-            "src": "../public/linen-shirt.png"
+            "src": "../public/linen-shirt.webp"
         },
         "market": {
             "marketName": "Uniqlo",
-            "marketLogo": "../public/uniqlo-logo.png"
+            "marketLogo": "../public/uniqlo-logo.webp"
         },
         "pricing": {
             "price": "$39.90"
@@ -304,11 +304,11 @@
             "type": "Gadget"
         },
         "images": {
-            "src": "../public/headphones.png"
+            "src": "../public/headphones.webp"
         },
         "market": {
             "marketName": "Best Buy",
-            "marketLogo": "../public/gadgetzone-logo.png"
+            "marketLogo": "../public/gadgetzone-logo.webp"
         },
         "pricing": {
             "price": "$89.99"

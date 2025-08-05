@@ -1,5 +1,10 @@
 import { GadgetM, FruitM } from "./Modal";
 
+const List = {
+    Gadget: GadgetM,
+    Fruit: FruitM
+}
+
 export class Product {
 
     constructor(data) {
@@ -69,7 +74,9 @@ export class Product {
         const img = document.querySelector('.card-img');
 
         card.addEventListener('click', () => {
-            const modal = new FruitM(this.product).modal();
+            const name = this.product.naming.type;
+
+            const modal = new List[name](this.product).modal();
         });
 
         return card

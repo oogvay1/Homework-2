@@ -1,5 +1,32 @@
 import Lenis from "lenis";
 import renderStars from "./Stars";
+import { Description, Details, DescriptionG, DetailsG } from "./Description";
+
+const List = {
+    Description: Description,
+    Details: Details
+};
+
+const List2 = {
+    Description: DescriptionG,
+    Details: DetailsG
+};
+
+let products = null;
+
+async function GetProduct() {
+
+    try {
+        const res = await fetch('../data/product.json');
+
+        if (!res.ok) throw new Error
+
+        const data = await res.json();
+        products = data;
+    } catch (error) {
+        console.error(error);
+    }
+}
 
 export class Modal {
 
@@ -62,30 +89,7 @@ export class GadgetM extends Modal {
                         </div>
 
                         <div id="moreInfo">
-                            <div class="datail">
-                                <li>Rrocessor</li>
-                                <li>${this.product.aboutProduct.processor}</li>
-                            </div>
-                            <div class="datail">
-                                <li>Camera</li>
-                                <li>${this.product.aboutProduct.camera}</li>
-                            </div>
-                            <div class="datail">
-                                <li>Screen</li>
-                                <li>${this.product.aboutProduct.screen}</li>
-                            </div>
-                            <div class="datail">
-                                <li>Cover</li>
-                                <li>${this.product.aboutProduct.cover ? this.product.aboutProduct.cover : this.product.aboutProduct.os}</li>
-                            </div>
-                            <div class="datail">
-                                <li>Battery</li>
-                                <li>${this.product.aboutProduct.battery}</li>
-                            </div>
-                            <div class="datail">
-                                <li>Storage</li>
-                                <li>${this.product.aboutProduct.storage}</li>
-                            </div>
+                            
                         </div>
                     </div>
 
@@ -108,9 +112,48 @@ export class GadgetM extends Modal {
         const quitBtn = this.Modal.querySelector('.quit-btn');
         if (quitBtn) {
             quitBtn.addEventListener('click', () => {
-                this.Modal.remove();
+                this.remove();
             });
         }
+
+        this.Modal.addEventListener('click', (e) => {
+            if (e.target.closest('.modal-inner') == null) {
+                this.Modal.remove();
+            }
+        });
+
+        const buttons = document.querySelectorAll('.info-buttons');
+
+        function init(product) {
+            if (buttons) {
+                buttons.forEach(el => {
+                    el.addEventListener('click', () => {
+                        buttons.forEach(btn => btn.classList.remove('active'));
+                        el.classList.add('active');
+
+                        const name = el.textContent.trim();
+                        const ClassRef = List2[name];
+
+                        if (ClassRef) {
+                            const instance = new ClassRef(product);
+                            instance.info();
+                        }
+                    });
+                });
+            }
+
+            const defaultName = 'Description';
+            const defaultClass = List2[defaultName];
+            const defaultButton = Array.from(buttons).find(btn => btn.textContent.trim() === defaultName);
+
+            if (defaultClass && defaultButton) {
+                defaultButton.classList.add('active');
+                const instance = new defaultClass(product);
+                instance.info();
+            }
+        }
+
+        init(this.product);
     }
 
     remove() {
@@ -164,30 +207,7 @@ export class FruitM extends Modal {
                         </div>
 
                         <div id="moreInfo">
-                            <div class="datail">
-                                <li>Origin</li>
-                                <li>${this.product.aboutProduct.origin}</li>
-                            </div>
-                            <div class="datail">
-                                <li>Ripeness</li>
-                                <li>${this.product.aboutProduct.ripeness}</li>
-                            </div>
-                            <div class="datail">
-                                <li>Packaging</li>
-                                <li>${this.product.aboutProduct.packaging}</li>
-                            </div>
-                            <div class="datail">
-                                <li>ShelfLife</li>
-                                <li>${this.product.aboutProduct.shelfLife}</li>
-                            </div>
-                            <div class="datail">
-                                <li>Vitamins</li>
-                                <li id="vitamins"></li>
-                            </div>
-                            <div class="datail">
-                                <li>Sweetness</li>
-                                <li>${this.product.aboutProduct.sweetness}</li>
-                            </div>
+                            
                         </div>
                     </div>
 
@@ -215,15 +235,44 @@ export class FruitM extends Modal {
             });
         }
 
-        const vitamins = document.getElementById('vitamins');
+        this.Modal.addEventListener('click', (e) => {
+            if (e.target.closest('.modal-inner') == null) {
+                this.Modal.remove();
+            }
+        });
 
-        for (const vitamin of this.product.aboutProduct.vitamins) {
-            const vitaminContainer = document.createElement('li');
-console.log(vitamin)
-            vitaminContainer.textContent = vitamin;
+        const buttons = document.querySelectorAll('.info-buttons');
 
-            vitamins.appendChild(vitaminContainer);
+        function init(product) {
+            if (buttons) {
+                buttons.forEach(el => {
+                    el.addEventListener('click', () => {
+                        buttons.forEach(btn => btn.classList.remove('active'));
+                        el.classList.add('active');
+
+                        const name = el.textContent.trim();
+                        const ClassRef = List[name];
+
+                        if (ClassRef) {
+                            const instance = new ClassRef(product);
+                            instance.info();
+                        }
+                    });
+                });
+            }
+
+            const defaultName = 'Description';
+            const defaultClass = List[defaultName];
+            const defaultButton = Array.from(buttons).find(btn => btn.textContent.trim() === defaultName);
+
+            if (defaultClass && defaultButton) {
+                defaultButton.classList.add('active');
+                const instance = new defaultClass(product);
+                instance.info();
+            }
         }
+
+        init(this.product);
     }
 
     remove() {

@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Online shop">
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="src/style.css" media="print" onload="this.media='all'">
     <title>Vite App</title>
 </head>
 
@@ -13,16 +13,15 @@
 
     <div id="app">
         <div class="cards-container" id="cards-container">
-
         </div>
     </div>
 
     <div id="modalContainer">
-        
+
     </div>
 
 </body>
 
-<script type="module" src="/src/main.js"></script>
+<script type="module" src="/src/main.js" defer></script>
 
 </html>
