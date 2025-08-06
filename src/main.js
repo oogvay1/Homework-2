@@ -1,6 +1,5 @@
 import { Gadget, Fruit, Clothing, Food } from "./Build";
 import Lenis from "lenis";
-import { Description, Details } from "./Description";
 import starElements from "./Stars";
 import { Modal } from "./Modal";
 

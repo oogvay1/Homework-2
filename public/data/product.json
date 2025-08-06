@@ -21,7 +21,13 @@
             }
         },
         "available": {
-            "availableNumber": 25
+            "availableNumber": 25,
+            "availableColors": [
+                { "colorName": "black", "color": "#000" },
+                { "colorName": "gold", "color": "#ffe600" },
+                { "colorName": "white", "color": "#fff" },
+                { "colorName": "natural titanium", "color": "#c1c1c1" }
+            ]
         },
         "aboutProduct": {
             "processor": "A17 Bionic",
@@ -54,7 +60,13 @@
             }
         },
         "available": {
-            "availableNumber": 40
+            "availableNumber": 40,
+            "availableColors": [
+                { "colorName": "black", "color": "#000" },
+                { "colorName": "gold", "color": "#ffe600" },
+                { "colorName": "white", "color": "#fff" },
+                { "colorName": "natural titanium", "color": "#c1c1c1" }
+            ]
         },
         "aboutProduct": {
             "processor": "Exynos 2400",

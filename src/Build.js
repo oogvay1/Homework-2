@@ -49,7 +49,7 @@ export class Product {
 
                         <div class="pay-icon">
                             <div class="credit pay-container">
-                                <img src="./public/image-removebg-preview.webp" alt="">
+                                <img src="./public/creditcard.png" alt="">
                                 <p>${this.product.payment.paymentType.creditCard ? this.product.payment.paymentType.creditCard : this.product.payment.paymentType.cash}</p>
                             </div>
                             <div class="line"></div>

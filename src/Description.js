@@ -100,23 +100,3 @@ export class DescriptionG extends Buttons {
 
     }
 }
-
-
-export class Details extends Buttons {
-
-    info() {
-
-        const infoContainer = document.getElementById('moreInfo');
-
-        infoContainer.textContent = 'salom';
-    }
-};
-
-export class DetailsG extends Buttons {
-
-    info() {
-        const infoContainer = document.getElementById('moreInfo');
-
-        infoContainer.innerHTML = 'salom';
-    }
-};

@@ -1,6 +1,7 @@
 import Lenis from "lenis";
 import renderStars from "./Stars";
-import { Description, Details, DescriptionG, DetailsG } from "./Description";
+import { Description, DescriptionG } from "./Description";
+import { Details, DetailsG } from "./Details";
 
 const List = {
     Description: Description,
@@ -153,6 +154,10 @@ export class GadgetM extends Modal {
             }
         }
 
+        document.querySelector('.modal-btn').addEventListener('click', () => {
+            alert('aded to cart');
+        });
+
         init(this.product);
     }
 
@@ -271,6 +276,10 @@ export class FruitM extends Modal {
                 instance.info();
             }
         }
+
+        document.querySelector('.modal-btn').addEventListener('click', () => {
+            alert('aded to cart');
+        });
 
         init(this.product);
     }
